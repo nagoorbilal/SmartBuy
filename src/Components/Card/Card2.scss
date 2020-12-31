@@ -1,0 +1,62 @@
+@import '../CommonFIles/Styles/index.scss';  
+
+._ic{
+  margin: 10px;
+}
+._icw{
+  border: 1px solid #e5e5e5;
+  padding: 22px 12px;
+  height: 100%;
+  // margin: 8px;
+  position: relative;
+  background: $white;
+}
+._icw:hover {
+  box-shadow: 1px 1px 10px 0 rgba(1,1,1,.15);
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(1,1,1,.15);
+  -moz-box-shadow: 1px 1px 10px 0 rgba(1,1,1,.15);
+  cursor: pointer;
+}
+._icfh{
+    height: 100%;
+}
+._iciw{
+  min-height: 210px;
+}
+._iciwp{
+  text-align: center;
+  position: relative;
+}
+._iciws{
+  width: 180px;
+  height: 180px;
+  overflow: visible;
+  position: relative;
+  padding-top: 0px;
+  margin: auto;
+  display: block;
+  background: transparent none repeat scroll 0% 0%;
+}
+._icii{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: auto;
+}
+._iciws img{
+  margin: auto;
+  max-height: 180px;
+  display: block;
+  width: 100%;
+}
+._icwbd{
+  border: 1px solid #e5e5e5;
+  height: 100%;
+}
+
+._icid{
+  height: fit-content;
+}

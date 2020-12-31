@@ -1,0 +1,16 @@
+@import '../Styles/index.scss';
+
+
+.HeaderBgColor{
+    background: $header-color !important;
+}
+.HeaderFixed{
+    position: fixed !important;
+}
+.width60{
+    width: 60% !important;
+}
+.LoginButton{
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}

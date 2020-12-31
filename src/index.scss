@@ -1,0 +1,13 @@
+@import './Components/CommonFIles/Styles/index.scss';
+
+
+
+body {
+  margin: 0;
+  /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif !important;
+  /* font-family: 'Inter' !important; */
+  background: #f6f6f6;
+}

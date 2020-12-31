@@ -1,0 +1,187 @@
+.container {
+  margin: 2rem auto;
+  padding: 0 1em;
+  max-width: 60em;
+  min-height: 10em;
+}
+
+// Menu styles
+.menu {
+  background-color: lighten(gray, 15%);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  // Menu link styles
+  a {
+    background-color: gray;
+    color: white;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: lighten(gray, 10%);
+    }
+  }
+
+  // Top-level menu items
+  > li {
+    display: block;
+    position: relative;
+  }
+}
+
+// Sub-menu styles
+.sub-menu {
+
+  // These are the key CSS properties to create the effect
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0.1;
+  transition: transform 0.1s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+  transform: translateY(-10px) scaleY(0.5);
+  transform-origin: top;
+
+  // Typical sub-menu styling
+  box-shadow: 5px 5px 5px rgba(black, 0.3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 10em;
+}
+
+// Sub-menu styles when shown
+.menu > li:hover > .sub-menu {
+  clip: auto;
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+
+
+
+// Old css
+.SubHeader{
+  position: relative;
+  top: 65px;
+  height: 30px;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+}
+.SubHeaderItems{
+  display: flex;
+  align-items: center;
+  max-width: 1248px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+
+.SubHeaderItemTitle {
+color: #888;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.15em;
+
+display: inline-block;
+padding: 0 15px;
+position: relative;
+cursor: pointer;
+}
+.SubHeaderItemTitle_all{
+color: #40407A;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.15em;
+
+display: inline-block;
+padding: 0 15px;
+position: relative;
+cursor: pointer;
+}
+.SubHeaderItemTitle:after {    
+/* background: none repeat scroll 0 0 transparent; */
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #40407A;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+.SubHeaderItemTitle:hover:after { 
+width: 100%; 
+left: 0; 
+color: #40407A;
+}
+/* 
+.SubHeaderItemTitle{
+  text-transform: uppercase;
+  cursor: pointer;
+  flex-grow: 1;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #888;    
+} */
+._active{
+border-bottom: 2px solid #40407A;
+color: #40407A;
+}
+._active:hover{
+border: none;
+}
+.SubHeaderItemsList{
+display: none;
+}
+
+/* Ripple Effect Css */
+
+.ripple {
+position: relative;
+overflow: hidden;
+transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+content: "";
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+background-repeat: no-repeat;
+background-position: 50%;
+transform: scale(10, 10);
+opacity: 0;
+transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+transform: scale(0, 0);
+opacity: .3;
+transition: 0s;
+}
+
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+  .SubHeaderItemTitle{
+    display: none;
+  }
+}

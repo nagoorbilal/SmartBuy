@@ -1,0 +1,34 @@
+.BodyContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    position: relative;
+}
+.FilterDiv{
+    width: 25%;
+    background: #fff;
+    height: 100%;
+    padding: 25px !important;
+}
+.BodyDiv{
+    width: 75%;
+    padding: 25px !important;
+    background: #fff;
+    height: 100%;
+}
+.BodyInnerDiv{
+    background: #333;
+    color: #fff;
+    height: 80vh;
+}
+
+/* Slider CSS */
+.SlideShowDiv{
+    width: 100% !important;
+    background: #333;
+}
+.SlideShowImage {
+/* width: 500px;
+height: 500px; */
+}
